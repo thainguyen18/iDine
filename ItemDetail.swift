@@ -41,7 +41,7 @@ struct ItemDetail: View {
         }
         .navigationBarTitle(Text(item.name), displayMode: .inline)
         .navigationBarItems(trailing: Button(action: handleFavorite) {
-            Image(systemName: favorite.items.contains(item) ? "star.fill" : "star")
+            Image(systemName: favorite.items.contains(item) ? "star.fill" : "star").font(.title)
             })
     }
     
